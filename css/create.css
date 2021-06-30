@@ -6,6 +6,7 @@
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
 }
 
 header{
@@ -64,16 +65,13 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    /* margin: 1.5em 0; */
 }
 
 .wrapper h2{
     text-align: center;
     color: black;
     padding: 0 0 10px;
-}
-
-.mail{
-    margin: 1.5em 0;
 }
 
 input.box{
@@ -85,6 +83,17 @@ input.box{
     outline: none;
     cursor: pointer;
     margin: 8px 0;
+}
+
+.wrapper a{
+    font-size: smaller;
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper a:hover{
+    text-decoration: underline;
+    color: #931415;
 }
 
 .chck{
@@ -111,19 +120,23 @@ input.box{
 .submit input{
     width: 100%;
     padding: 10px 0;
-    background-color: #931415;
-    color: white;
-    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.25);
     cursor: pointer;
+}
+
+ .submit input:hover{
+    background: #931415;
+    color: white;
 }
 
 .txt{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 1em 0;
     color: rgba(0, 0, 0, 0.35);
 }
 
@@ -133,23 +146,23 @@ input.box{
 }
 
 hr{
-    display: inline-block;
-    width: 130px;
-    margin: 3px 0; 
- }
- 
- .call{
-     text-align: center;
-     margin-top: 10px;
-     color: rgba(0, 0, 0, 0.35);
- 
- }
- 
- #call{
-     padding: 4px;
-     border-radius: 100px;
-     border: 1px solid rgba(0, 0, 0, 0.35);
- }
+   display: inline-block;
+   width: 130px;
+   margin: 3px 0; 
+}
+
+.call{
+    text-align: center;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.35);
+
+}
+
+#call{
+    padding: 4px;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
 
 .alt{
     display: flex;
@@ -175,9 +188,8 @@ hr{
 }
 
 .wrap-right{
-    width: 380px;
-    align-items: flex-start;
-    margin: 3em 0;
+    width: 350px;
+    margin: 5em 0;
 }
 
 .wrap-right h2{
@@ -185,14 +197,24 @@ hr{
     font-size: 28px;
 }
 
+/* .social-links{
+    margin-top: 1em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.social-links a{
+    margin: 0 10px;
+    font-size: 1.5em;
+} */
+
 footer{
     background-color: #931415;
+    margin-top: .8em;
     width: 100%;
-    margin-top: 2em;
     padding: 10px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 footer .base-links{
@@ -213,30 +235,7 @@ footer .base-links a:hover{
     border-bottom: 1px solid white;
 }
 
-footer .sl-p{
-    color: white;
-    text-align: center;
-    margin: 1em;
-}
-
-footer .social-links{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-footer .social-links a{
-    margin: 0 20px;
-    font-size: 1.5em;
-}
-
-footer .social-links a:nth-child(1){
-    background: white;
-}
-
-/* for medium screen size */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .nav-links{
         position: fixed;
         left: -100%;
@@ -290,10 +289,6 @@ footer .social-links a:nth-child(1){
     .wrap-right{
         text-align: center;
         width: 300px;
-    }
-
-    footer{
-        display: flex;
-        flex-direction: column;
+        margin: 20px;
     }
 }

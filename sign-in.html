@@ -9,7 +9,7 @@
     <!-- font css link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Sign-in</title>
 </head>
 <body>
     <header>
@@ -36,27 +36,33 @@
         <div class="wrapper">
             <form action="link to where information will be processed" method="post">
                 <h2>Sign In</h2>
-                <label for="Email"> Email <br>
-                    <input type="text" class="box name" name="Email" required id="">
-                </label> <br>
-    
-                <label for="Password"> Password <br>
-                    <input type="password" class="box passwrd" name="paswrd" required id="">
-                </label> <br>
-                <!-- <input type="checkbox" name="gender" checked id="b1" class="radio">
-                <label for="b1">Remember me</label> --> <a href="#">Forgot Password?</a>
-
+                <div class="mail">
+                    <label for="Email"> Email <br>
+                        <input type="text" class="box name" name="Email" required id="">
+                    </label>
+                </div>
+                <div class="pswrd">
+                    <label for="Password"> Password <br>
+                        <input type="password" class="box passwrd" name="paswrd" required id="">
+                    </label>
+                </div>
+                <div class="chck">
+                    <a href="#">Forgot Password?</a>
+                </div>
                 <div class="submit">
                     <input type="submit" value="Log In">
                 </div>
             </form>
 
-            <p>Follow us:</p>
-
-            <div class="social-links">
-            <a href="http://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true" style="color: #395185;"></i></a>
-            <a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true" style="color: #55ACEE;"></i></a>
+            <div class="txt">
+                <p>Don't have an account? <a href="create-account.html">Sign up</a></p>
+            </div>
+            <div class="call">
+                <p><hr><span id="call">OR</span><hr></p>
+            </div>
+            <div class="alt">
+                <a href="http://google.com">Google</a>
+                <a href="http://facebook.com">Facebook</a>
             </div>
         </div>
 
@@ -74,8 +80,19 @@
             <a href="#">About</a>
             <a href="#">FAQ</a>
         </div>
+
+        <div class="sl">
+            <div class="sl-p">
+                <p>Follow us:</p>
+            </div>
+            <div class="social-links">
+                <a href="http://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true" style="color: #395185;"></i></a>
+                <a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true" style="color: #55ACEE;"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script src="./sign.js"></script>
+    <script src="./javascript/sign.js"></script>
 </body>
 </html>
